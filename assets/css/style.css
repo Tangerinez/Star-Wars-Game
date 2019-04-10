@@ -81,3 +81,13 @@ h1 {
 .footer-margin {
     height: 100px;
 }
+
+.player-container {
+    width: 180px !important;
+}
+
+.enemy-container {
+    width: 200px !important;
+}
+
+

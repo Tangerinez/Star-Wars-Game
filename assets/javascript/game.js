@@ -77,7 +77,7 @@ function charCards(gameID) {
         $(gameID + " div:last-child").addClass("card"); // Adding Bootstrap "card" class <div> element that is last child of #game ID div
         $(gameID + " div:last-child").append("<img/>"); // Appends image tag - Everything underneath is within image tag
         $(gameID + " img:last-child").attr("id", charArray[i].name);    // ID of the character in the card
-        $(gameID + " img:last-child").attr("class", "card-img-top");    // Bootstrap class 
+         $(gameID + " img:last-child").attr("class", "card-img-top");     // Bootstrap class 
         $(gameID + " img:last-child").attr("src", charArray[i].image);      // Image file
         $(gameID + " img:last-child").attr("width", 150);         // Card width
         $(gameID + " img:last-child").addClass("img-thumbnail");         // Bootstrap image thumbnail
@@ -94,7 +94,9 @@ function updateCards(gameDiv, enemiesLeft) {
         $(enemiesLeft + " img:last-child").attr("id", charArray[i].name);
         $(enemiesLeft + " img:last-child").attr("src", charArray[i].image);
         $(enemiesLeft + " img:last-child").attr("width", 150);
-        $(enemiesLeft + " img:last-child").addClass("img-thumbnail");     
+        $(enemiesLeft + " img:last-child").addClass("img-thumbnail");   
+        /* $(gameID + " img:last-child").attr("class", "card-img-top"); */ 
+        
     }
 }
 
